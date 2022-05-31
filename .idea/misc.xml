@@ -12,7 +12,7 @@
         <entry key="app/src/main/res/layout/fragment_details.xml" value="0.2833333333333333" />
         <entry key="app/src/main/res/layout/fragment_location.xml" value="0.290625" />
         <entry key="app/src/main/res/layout/fragment_map.xml" value="0.290625" />
-        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.2833333333333333" />
         <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.2833333333333333" />
         <entry key="app/src/main/res/layout/fragment_splash.xml" value="0.5645833333333333" />
         <entry key="app/src/main/res/layout/fragment_system.xml" value="0.5" />

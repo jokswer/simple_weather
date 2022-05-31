@@ -29,6 +29,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/searchTextInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="@id/leftGuideline"
@@ -40,6 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/city"
+            android:imeOptions="actionDone"
             android:inputType="text"
             android:maxLines="1" />
 
@@ -50,6 +52,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:indeterminate="true"
+        android:layout_marginTop="2dp"
         app:layout_constraintLeft_toLeftOf="@id/leftGuideline"
         app:layout_constraintRight_toRightOf="@id/rightGuideline"
         app:layout_constraintTop_toBottomOf="@id/searchTextInputLayout" />
