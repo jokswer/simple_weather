@@ -12,6 +12,7 @@ import ru.akbirov.weather.app.model.weather.entities.CurrentData
 import ru.akbirov.weather.app.model.weather.entities.ListItem
 import ru.akbirov.weather.app.screens.base.BaseFragment
 import ru.akbirov.weather.app.utils.DISPLAY_FORMAT
+import ru.akbirov.weather.app.utils.findTopNavController
 import ru.akbirov.weather.app.utils.getDate
 import ru.akbirov.weather.databinding.FragmentDashboardBinding
 
@@ -51,16 +52,16 @@ class DashboardFragment : BaseFragment(R.layout.fragment_dashboard) {
     }
 
     private fun onMorePress() {
-        findNavController().navigate(
-            R.id.action_dashboardFragment_to_detailsFragment,
+        findTopNavController().navigate(
+            R.id.action_tabsFragment_to_detailsFragment2,
             null,
             getNavOptions()
         )
     }
 
     private fun onSetLocationPress() {
-        findNavController().navigate(
-            R.id.action_dashboardFragment_to_locationFragment2,
+        findTopNavController().navigate(
+            R.id.action_tabsFragment_to_locationFragment3,
             null,
             getNavOptions()
         )

@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/settingsFragment"
         android:name="ru.akbirov.weather.app.screens.main.tabs.settings.SettingsFragment"
-        android:label="fragment_settings"
-        tools:layout="@layout/fragment_settings" >
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings">
         <action
             android:id="@+id/action_settingsFragment_to_locationFragment"
             app:destination="@id/locationFragment" />
@@ -20,11 +20,11 @@
     <fragment
         android:id="@+id/locationFragment"
         android:name="ru.akbirov.weather.app.screens.main.tabs.settings.LocationFragment"
-        android:label="fragment_location"
+        android:label="Location"
         tools:layout="@layout/fragment_location" />
     <fragment
         android:id="@+id/systemFragment"
         android:name="ru.akbirov.weather.app.screens.main.tabs.settings.SystemFragment"
-        android:label="fragment_system"
+        android:label="System"
         tools:layout="@layout/fragment_system" />
 </navigation>
