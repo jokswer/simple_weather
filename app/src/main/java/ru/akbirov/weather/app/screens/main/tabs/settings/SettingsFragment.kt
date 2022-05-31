@@ -36,8 +36,14 @@ class SettingsFragment : BaseFragment(R.layout.fragment_settings) {
 
     private fun onNavigate(id: Long) {
         when (id) {
-            SettingsViewModel.LOCATION -> findNavController().navigate(R.id.action_settingsFragment_to_locationFragment)
-            SettingsViewModel.SYSTEM -> findNavController().navigate(R.id.action_settingsFragment_to_systemFragment)
+            SettingsViewModel.LOCATION -> findNavController().navigate(
+                R.id.action_settingsFragment_to_locationFragment, null,
+                getNavOptions()
+            )
+            SettingsViewModel.SYSTEM -> findNavController().navigate(
+                R.id.action_settingsFragment_to_systemFragment, null,
+                getNavOptions()
+            )
         }
     }
 }

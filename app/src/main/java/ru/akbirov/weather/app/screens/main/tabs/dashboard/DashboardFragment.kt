@@ -1,7 +1,6 @@
 package ru.akbirov.weather.app.screens.main.tabs.dashboard
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
@@ -52,11 +51,19 @@ class DashboardFragment : BaseFragment(R.layout.fragment_dashboard) {
     }
 
     private fun onMorePress() {
-        findNavController().navigate(R.id.action_dashboardFragment_to_detailsFragment)
+        findNavController().navigate(
+            R.id.action_dashboardFragment_to_detailsFragment,
+            null,
+            getNavOptions()
+        )
     }
 
     private fun onSetLocationPress() {
-        findNavController().navigate(R.id.action_dashboardFragment_to_locationFragment2)
+        findNavController().navigate(
+            R.id.action_dashboardFragment_to_locationFragment2,
+            null,
+            getNavOptions()
+        )
     }
 
     private fun renderCard(data: DashboardViewModel.ViewState) {
@@ -84,7 +91,8 @@ class DashboardFragment : BaseFragment(R.layout.fragment_dashboard) {
     }
 
     private fun renderDetailsCard(items: List<ListItem>) {
-        val layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+        val layoutManager =
+            LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         binding.detailsList.layoutManager = layoutManager
         binding.detailsList.adapter = adapter
 
